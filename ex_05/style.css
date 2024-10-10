@@ -1,0 +1,26 @@
+body {
+    margin-bottom:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#character {
+    width: 256px;
+    height: 256px;
+
+    bottom: 0;
+    position:absolute;
+
+    background-image: url('walking.png');
+    background-position: 0 0;
+    animation: play 0.7s steps(10) infinite;
+}
+
+@keyframes play{
+    to{
+        background-position: -2565px ;
+    }
+}
+
